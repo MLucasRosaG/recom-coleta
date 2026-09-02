@@ -417,31 +417,31 @@
     .hero-collage {
       position: relative;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      min-height: 380px;
+      justify-content: center;
+      min-height: auto;
     }
     .hero-polaroid-main {
-      width: min(340px, 90%);
-      transform: rotate(2.5deg);
+      width: min(340px, 92%);
+      transform: rotate(1.5deg);
       z-index: 3;
     }
     .hero-scrap-badge {
-      position: absolute;
-      bottom: -16px;
-      left: 0;
       background: var(--marfim);
       color: var(--tinta);
-      padding: 10px 16px;
+      padding: 10px 18px;
       border: 2px solid var(--tinta);
       box-shadow: 4px 4px 0 var(--terracota);
-      transform: rotate(-5deg);
+      transform: rotate(-2deg);
       font-family: var(--font-typewriter);
-      font-size: 0.82rem;
+      font-size: 0.85rem;
       font-weight: 700;
       z-index: 5;
-      max-width: 220px;
+      margin-top: -14px;
+      text-align: center;
       line-height: 1.35;
+      max-width: 280px;
     }
 
     /* ==========================================================================
@@ -1006,9 +1006,9 @@
       .hero-actions { width: 100%; flex-direction: column; align-items: stretch; }
       .hero-actions .btn-tag { width: 100%; }
 
-      .hero-collage { min-height: auto; width: 100%; }
-      .hero-polaroid-main { width: 100%; max-width: 300px; transform: rotate(1deg); }
-      .hero-scrap-badge { position: relative; bottom: auto; left: auto; margin-top: 14px; max-width: 100%; text-align: center; transform: none; }
+      .hero-collage { min-height: auto; width: 100%; display: flex; flex-direction: column; align-items: center; }
+      .hero-polaroid-main { width: 100%; max-width: 290px; transform: rotate(1deg); }
+      .hero-scrap-badge { position: static; margin-top: 12px; max-width: 260px; text-align: center; transform: rotate(-1deg); }
 
       .section-impacto { padding: 44px 0 28px; }
       .note-sheet { padding: 28px 18px 24px; }
@@ -1447,11 +1447,11 @@
                 Dirija-se ao <strong>Bloco de Computação</strong> (área dos laboratórios e coordenação de curso). Siga pelo corredor principal: somos a <strong>última sala do corredor, logo após o Laboratório 8</strong>!
               </div>
 
-              <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+              <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center; justify-content: center; margin-top: 18px;">
                 <div class="tag-horario">
                   ⏰ <strong>Horário:</strong> Seg a Sex, 8h–12h e 14h–18h
                 </div>
-                <a href="https://www.google.com/maps/place/FACAPE/@-9.3963162,-40.4770076,16.75z/data=!4m6!3m5!1s0x77370608d9f005f:0xccd0290482fcdd50!8m2!3d-9.3960286!4d-40.4795076!16s%2Fg%2F122tz_32" target="_blank" rel="noopener noreferrer" class="btn-tag" style="padding: 8px 14px; font-size: 0.85rem; background: var(--marfim); color: var(--verde-escuro); border-color: var(--verde-escuro); box-shadow: 2px 2px 0 var(--tinta);">
+                <a href="https://www.google.com/maps/place/FACAPE/@-9.3963162,-40.4770076,16.75z/data=!4m6!3m5!1s0x77370608d9f005f:0xccd0290482fcdd50!8m2!3d-9.3960286!4d-40.4795076!16s%2Fg%2F122tz_32" target="_blank" rel="noopener noreferrer" class="btn-tag" style="padding: 10px 18px; font-size: 0.9rem; background: var(--marfim); color: var(--verde-escuro); border-color: var(--verde-escuro); box-shadow: 2px 2px 0 var(--tinta);">
                   Abrir no Google Maps ↗
                 </a>
               </div>
