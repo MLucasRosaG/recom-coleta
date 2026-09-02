@@ -987,6 +987,60 @@
       border-radius: 3px;
     }
 
+    /* ==========================================================================
+       RESPONSIVIDADE MOBILE (SMARTPHONES)
+       ========================================================================== */
+    @media (max-width: 680px) {
+      .wrap { padding: 0 16px; }
+      
+      .site-header { padding: 12px 0 16px; }
+      .header-inner { justify-content: center; text-align: center; gap: 14px; }
+      .nav-tabs { justify-content: center; gap: 6px; }
+      .nav-tabs a { font-size: 0.8rem; padding: 6px 10px; }
+
+      .hero-section { padding: 40px 0 54px; }
+      .hero-grid { gap: 36px; }
+      .hero-text-content { align-items: center; text-align: center; }
+      .hero-title { font-size: 2.1rem; }
+      .hero-desc { font-size: 1.05rem; }
+      .hero-actions { width: 100%; flex-direction: column; align-items: stretch; }
+      .hero-actions .btn-tag { width: 100%; }
+
+      .hero-collage { min-height: auto; width: 100%; }
+      .hero-polaroid-main { width: 100%; max-width: 300px; transform: rotate(1deg); }
+      .hero-scrap-badge { position: relative; bottom: auto; left: auto; margin-top: 14px; max-width: 100%; text-align: center; transform: none; }
+
+      .section-impacto { padding: 44px 0 28px; }
+      .note-sheet { padding: 28px 18px 24px; }
+      .note-content blockquote { font-size: 1.25rem; }
+
+      .section-listas { padding: 36px 0 50px; }
+      .card-fichario { padding: 26px 18px 22px; }
+      .fichario-title { font-size: 1.3rem; }
+
+      .section-sobre { padding: 48px 0; }
+      .sobre-polaroid-1 { width: 100%; transform: rotate(-1deg); }
+      .sobre-polaroid-2 { width: 92%; margin-top: -24px; transform: rotate(1.5deg); align-self: center; }
+      .sobre-highlights { grid-template-columns: 1fr; }
+
+      .section-processo { padding: 48px 0 56px; }
+      .processo-cards { grid-template-columns: 1fr; }
+
+      .section-entrega { padding: 48px 0; }
+      .card-mapa { padding: 18px 14px; }
+      .mapa-frame-wrapper iframe { height: 230px; }
+      .polaroid-entrada, .polaroid-porta { max-width: 100%; transform: none; }
+
+      .section-cta-final { padding: 42px 0; }
+      .cta-card-central { padding: 28px 16px; }
+      .cta-card-central .btn-tag { width: 100%; }
+
+      .site-footer { padding: 32px 0; text-align: center; }
+      .footer-inner { justify-content: center; flex-direction: column; gap: 18px; }
+      .footer-brand { flex-direction: column; text-align: center; }
+      .footer-stamps { justify-content: center; }
+    }
+
     @media (prefers-reduced-motion: reduce) {
       * { animation: none !important; transition: none !important; }
       html { scroll-behavior: auto; }
